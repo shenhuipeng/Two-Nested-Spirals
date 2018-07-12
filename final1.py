@@ -15,7 +15,6 @@ class four_layer_model():
         self.layer3 = one_FC_layer(20, 10, "relu")
         self.layer4 = one_FC_layer(10, 1, "sigmoid")
         self.learning_rate = learning_rate
-
     def forward(self,X):
         """
         :param X:  input (input_dim,sample num)
@@ -47,12 +46,10 @@ class four_layer_model():
         # self.layer2.FC_update_with_momentum(0.95,self.learning_rate)
         # self.layer1.FC_update_with_momentum(0.95,self.learning_rate)
 
-
         self.layer4.FC_update_basic(self.learning_rate)
         self.layer3.FC_update_basic(self.learning_rate)
         self.layer2.FC_update_basic(self.learning_rate)
         self.layer1.FC_update_basic(self.learning_rate)
-
 
     def predict(self,A):
         assert(A.shape[0] == 1)
@@ -80,7 +77,7 @@ def random_mini_batches(X, Y, mini_batch_size = 64, seed = 0):
     mini_batches -- list of synchronous (mini_batch_X, mini_batch_Y)
     """
 
-    np.random.seed(seed)            #
+    np.random.seed(seed)
     m = X.shape[1]
     mini_batches = []
 
@@ -90,14 +87,11 @@ def random_mini_batches(X, Y, mini_batch_size = 64, seed = 0):
 
     batch_nums = math.floor(m/mini_batch_size)
     for k in range(0, batch_nums):
-        ### START CODE HERE ### (approx. 2 lines)
         mini_batch_X = shuffled_X[:, k * mini_batch_size : (k + 1) * mini_batch_size]
         mini_batch_Y = shuffled_Y[:, k * mini_batch_size : (k + 1) * mini_batch_size]
-        ### END CODE HERE ###
         mini_batch = (mini_batch_X, mini_batch_Y)
         mini_batches.append(mini_batch)
 
-    # Handling the end case (last mini-batch < mini_batch_size)
     if m % mini_batch_size != 0:
         mini_batch_X = shuffled_X[:, batch_nums * mini_batch_size : ]
         mini_batch_Y = shuffled_Y[:, batch_nums * mini_batch_size : ]
@@ -105,10 +99,6 @@ def random_mini_batches(X, Y, mini_batch_size = 64, seed = 0):
         mini_batches.append(mini_batch)
 
     return mini_batches
-
-
-
-
 
 data_label= get_data()
 np.random.shuffle(data_label)

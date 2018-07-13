@@ -13,4 +13,9 @@ Thanks for Andrew Ng!
 
 Thanks for JudasDie!
 
+
+## How to use:
+
+run `final1.py`
+
 ![image](https://github.com/shenhuipeng/Two-Nested-Spirals/blob/master/process.gif)

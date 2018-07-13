@@ -19,3 +19,6 @@ Thanks for JudasDie!
 run `final1.py`
 
 ![image](https://github.com/shenhuipeng/Two-Nested-Spirals/blob/master/process.gif)
+
+![image](https://github.com/shenhuipeng/Two-Nested-Spirals/blob/master/aftertrain.png)
+

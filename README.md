@@ -12,3 +12,10 @@ the algorithm to generate Two-Nested-Spirals data is from W Zhao, DS Huang，`Th
 Thanks for Andrew Ng!
 
 Thanks for JudasDie!
+
+
+## How to use:
+
+run `final1.py`
+
+![image](https://github.com/shenhuipeng/Two-Nested-Spirals/blob/master/process.gif)

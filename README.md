@@ -13,5 +13,4 @@ Thanks for Andrew Ng!
 
 Thanks for JudasDie!
 
-![image]
-(https://github.com/shenhuipeng/Two-Nested-Spirals/blob/master/process.gif)
+![image](https://github.com/shenhuipeng/Two-Nested-Spirals/blob/master/process.gif)
